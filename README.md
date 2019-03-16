@@ -30,7 +30,9 @@ pangolin opencv eigen3 g2o主要是这几个。
 
 2.3 rosrun 
 rosrun ORB_SLAM2 RGBD /home/qi/orbslam_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt /home/qi/orbslam_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/Asus.yaml /camera/rgb/image_raw:=/camera/color/image_raw /camera/depth_registered/image_raw:=/camera/infra1/image_rect_raw
+
 注意:１．需要orb字典，可能是用来特征匹配的　２．需要修改相机参数：内参肯定要修改，信息再realsense的/camera/color/camera_info里面　（Ｋ是内参，Ｄ是畸变）２．畸变貌似realｓｅｎｓｅ的畸变是０（可能已经矫正过畸变了),别的相机需要矫正
+
 ３．左边是orb需要的topic 右边是realsense实际的topic 
 
 ３．还有一些报错参考oneonte 
